@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EAEAEA"
+    android:layout_height="match_parent"
+
+    tools:context=".OuterBoxprntingActivity">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/mainColor">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_baseline_arrow_back_24" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/profile"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/profilee"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/profile"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:text="User Name"
+            android:visibility="gone"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/username"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back"
+            android:text="Outer Box printing"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+
+            android:textColor="@color/white"
+
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:background="#EAEAEA"
+        android:id="@+id/datepayout"
+
+        android:layout_below="@id/title">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/datepicker"-->
+<!--            android:layout_width="18dp"-->
+<!--            android:layout_height="18dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginBottom="2dp"-->
+<!--            />-->
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+
+            android:background="@drawable/spinner_bg1"
+
+         >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="dd"
+                android:id="@+id/dd"
+                android:text="27"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginLeft="8dp"
+                android:textSize="8sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sign"
+                android:text="/"
+
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:textSize="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mm"
+                android:hint="mm"
+                android:text="03"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textSize="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sign1"
+                android:text="/"
+
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:textSize="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yy"
+                android:hint="yyyy"
+                android:text="2023"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textSize="8sp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EAEAEA"
+        android:id="@+id/layout"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/qrcodeScanning"
+        android:windowSoftInputMode="adjustPan"
+        android:layout_below="@id/datepayout"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pacingquantity"
+            android:text="Packing Quanity-0"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+
+            android:textColor="@color/black"
+            android:fontFamily="@raw/dmsansmedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbtxt"
+            android:layout_below="@+id/pacingquantity"
+            android:text="Cabinet Scanning"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:fontFamily="@raw/dmsansmedium"/>
+
+        <EditText
+            android:id="@+id/boxbarcabinetscanning"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/cbtxt"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="70dp"
+            android:textColor="@color/black"
+            android:inputType="text"
+
+
+
+            android:background="@drawable/spinner_bg"
+
+
+            android:padding="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30sp"
+                android:id="@+id/c"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_below="@+id/boxbarcabinetscanning">
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:background="@color/black">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/modelnum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Model No"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    android:background="@color/black">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/cabinetnumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="Cabinet Number"
+
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    android:background="@color/black">
+
+                </View>
+            </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/c"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="22dp"
+
+            android:visibility="visible" />
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/qrcodeScanning"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="20dp" -->
+<!--            android:layout_marginRight="20dp"-->
+<!--            -->
+<!--            android:layout_marginBottom="40dp"-->
+<!--            android:background="@drawable/btn_bg">-->
+
+<!--            <TextView-->
+
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:fontFamily="@raw/dmsansmedium"-->
+<!--                android:text="QR CODE GENERATION"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="22dp" />-->
+<!--        </RelativeLayout>-->
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/qrcodeScanning"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:windowSoftInputMode="adjustPan"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/btn_bg">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@raw/dmsansmedium"
+            android:text="QR CODE GENERATION"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+    </RelativeLayout>
+</RelativeLayout>

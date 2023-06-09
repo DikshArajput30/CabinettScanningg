@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    app:cardElevation="10dp"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDesignNo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:text="Bel Name"
+            android:background="@drawable/edt_bg"
+            android:layout_weight="1"
+            android:paddingHorizontal="2dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvGrade"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Design No."
+            android:background="@drawable/edt_bg"
+            android:layout_weight="1"
+            android:paddingHorizontal="2dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBarcode"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:text="BARCODE"
+            android:paddingHorizontal="2dp"
+            android:background="@drawable/edt_bg"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvSQTY"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:text="SQTY"
+            android:layout_weight="1"
+            android:background="@drawable/edt_bg"
+            android:paddingHorizontal="2dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+<!--        <TextView-->
+<!--            android:id="@+id/tvWeight"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:gravity="center"-->
+<!--            android:background="@drawable/edt_bg"-->
+<!--            android:text="WEIGHT"-->
+<!--            android:layout_weight="1"-->
+<!--            android:paddingHorizontal="2dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="12dp"-->
+<!--            android:textStyle="bold" />-->
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_delete_24"/>
+
+       <!-- <TextView
+            android:id="@+id/tvSrNo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:layout_weight=".40"
+            android:gravity="center"
+            android:text="SR.NO."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />-->
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

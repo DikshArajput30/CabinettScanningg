@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+
+
+        android:background="@drawable/dashboard_original">
+
+        <ImageView
+            android:id="@+id/ivLogout"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/shutdown" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@raw/dmsansmedium"
+            android:text="Wayinfotech Solutions"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/circle"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/cabinetscanninglayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_bg">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@raw/dmsansmedium"
+                    android:text="Cabinet Scanning"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/partscanninglayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/cabinetscanninglayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_bg">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@raw/dmsansmedium"
+                    android:text="Cabinet/Part Scanning"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/erpartscanninglayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/partscanninglayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_bg_red"
+                android:visibility="gone">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@raw/dmsansmedium"
+                    android:text="ER Part Scanning"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reassemblelayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/erpartscanninglayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_bg_yellow">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@raw/dmsansmedium"
+                    android:text="Reassemble Scanning"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/qcscanninglayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/reassemblelayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                android:background="@drawable/btn_bg_green">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@raw/dmsansmedium"
+                    android:text="UPS QC Scanning"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/boxbarcodescanning"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/qcscanninglayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                android:background="@drawable/btn_bg_red">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@raw/dmsansmedium"
+                    android:text="Box Barcode Scanning"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/outerboxscanninglayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/boxbarcodescanning"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                android:background="@drawable/btn_bg_red">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@raw/dmsansmedium"
+                    android:text="QC ER Battery"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/dispatchlistlayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/outerboxscanninglayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                android:background="@drawable/btn_bg_lightyelo">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@raw/dmsansmedium"
+                    android:text="Dispatch"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/dispatchlistlayoutlist"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/dispatchlistlayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                android:visibility="gone"
+
+                android:background="@drawable/btn_bg">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@raw/dmsansmedium"
+                    android:text="Dispatch List"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reqcupslayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/dispatchlistlayoutlist"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/btn_bg"
+
+                android:visibility="visible">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@raw/dmsansmedium"
+                    android:text="ReQc UPS Scanning"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>
